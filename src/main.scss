@@ -1,0 +1,83 @@
+//colors
+$color_mine_shaft_approx: #333;
+$white: #fff;
+$color_silver_chalice_approx: #aaaaaa;
+$color_storm_dust_approx: #666;
+$color_gallery_approx: #eee;
+$color_pink_swan_approx: #bbb;
+$color_log_cabin_approx: #222;
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+body {
+    background: $color_mine_shaft_approx;
+	font-family: Roboto, sans-serif;
+	color: $white;
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+    height: 100vh;
+    width: 100%;
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+}
+.container {
+	width: 95vw;
+	min-height: 560px;
+	height: 90vh;
+	margin: auto;
+	display: flex;
+	flex-flow: column;
+	
+}
+.area {
+	display: flex;
+	flex-flow: column;
+	border: $color_silver_chalice_approx dashed 1px;
+	min-height: 300px;
+	height: 40vh;
+	margin: 12px;
+}
+@media(min-width: 1000px) {
+	.container {
+		width: 60vw;
+	}
+}
+@media(min-width: 1500px) {
+	.container {
+		width: 50vw;
+	}
+}
+p
+{
+	margin: 12px;
+}
+button
+{ 
+	box-sizing: content-box;
+	height: 20px;
+}
+textarea {
+	overflow-y: scroll;
+	resize: none;
+	background: $color_storm_dust_approx;
+	font-size: 14px;
+	color: $color_gallery_approx;
+	border: 2px solid $color_pink_swan_approx;
+	padding-left: 10px;
+	min-height: 80%;
+	flex-grow: 1;
+	width: 80%;
+	margin: 0 auto 12px auto;
+}
+button {
+	background-color: $color_log_cabin_approx;
+	border: 1px solid $color_silver_chalice_approx;
+	color: $white;
+	padding: 15px 32px;
+	font-size: 16px;
+}
