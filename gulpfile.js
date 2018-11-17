@@ -29,7 +29,7 @@ lazyRequireTask('assets', './tasks/assets.js', {
   dst: dest
 });
 
-lazyRequireTask('clean', './tasks/clean.js', {dst: dest});
+lazyRequireTask('clean', './tasks/clean.js', {dst: [dest+'*', '!'+dest+'/CNAME']});
 
 gulp.task('build', gulp.series(
     'clean',
